@@ -1,1 +1,5 @@
 01_first_code/.terraform/
+02_variables/command_type/.terraform/
+02_variables/tfvars_files/.terraform/
+03_locals/.terraform/
+04_outputs/.terraform/
