@@ -1,14 +1,4 @@
 
-variable "instance_type" {
-  type        = string
-  description = "In this file i am going to create the tfvar file and saving the variable names in that file"
-  
-  validation {
-    condition = length(var.instance_type) > 4
-    error_message = "The instance id must be more than 4 characters."
-  }
-}
-
 locals {
   project_name = "ravikumar"
 }
@@ -25,8 +15,4 @@ resource "aws_instance" "terraform123" {
 
 #       ${local.project_name}  --> we write for the local variables and
 #       #{local/}  --> we write for the path
-
-output "public_ip" {
-  value = aws_instance.terraform123.public_ip
-}
 
