@@ -3,3 +3,7 @@
 02_variables/tfvars_files/.terraform/
 03_locals/.terraform/
 04_outputs/.terraform/
+05_modules/.terraform
+
+
+terraform-up-and-running_compress.pdf

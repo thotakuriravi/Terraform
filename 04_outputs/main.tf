@@ -26,7 +26,7 @@ resource "aws_instance" "terraform123" {
 #       ${local.project_name}  --> we write for the local variables and
 #       #{local/}  --> we write for the path
 
-output "instance_ip_addr" {
-  value = aws_instance.terraform123.private_ip
+output "public_ip" {
+  value = aws_instance.terraform123.public_ip
 }
 
